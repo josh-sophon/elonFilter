@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Elon Tweet Filter",
+  "version": "1.0",
+  "description": "Filters Elon Musk's tweets based on content",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://twitter.com/*", "https://x.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://x.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
